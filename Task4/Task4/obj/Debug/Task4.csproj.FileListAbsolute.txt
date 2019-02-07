@@ -1,0 +1,6 @@
+C:\Users\Аружан\Desktop\pp2\PP2\Task4\Task4\bin\Debug\Task4.exe.config
+C:\Users\Аружан\Desktop\pp2\PP2\Task4\Task4\bin\Debug\Task4.exe
+C:\Users\Аружан\Desktop\pp2\PP2\Task4\Task4\bin\Debug\Task4.pdb
+C:\Users\Аружан\Desktop\pp2\PP2\Task4\Task4\obj\Debug\Task4.csprojResolveAssemblyReference.cache
+C:\Users\Аружан\Desktop\pp2\PP2\Task4\Task4\obj\Debug\Task4.exe
+C:\Users\Аружан\Desktop\pp2\PP2\Task4\Task4\obj\Debug\Task4.pdb
