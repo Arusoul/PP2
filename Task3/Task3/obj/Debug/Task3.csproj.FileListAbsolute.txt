@@ -1,0 +1,6 @@
+C:\EDUCATION\PP2\Week1\Task3\Task3\bin\Debug\Task3.exe.config
+C:\EDUCATION\PP2\Week1\Task3\Task3\bin\Debug\Task3.exe
+C:\EDUCATION\PP2\Week1\Task3\Task3\bin\Debug\Task3.pdb
+C:\EDUCATION\PP2\Week1\Task3\Task3\obj\Debug\Task3.csprojResolveAssemblyReference.cache
+C:\EDUCATION\PP2\Week1\Task3\Task3\obj\Debug\Task3.exe
+C:\EDUCATION\PP2\Week1\Task3\Task3\obj\Debug\Task3.pdb

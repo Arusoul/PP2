@@ -35,11 +35,11 @@ namespace Task1
                     
                 }
 
-                for(int j = 0; j < n; j++)
+                for(int i = 0; i < n; i++)
                 {
-                    if(array[j] > 1) // 1 isn't prime num, it starts from 2
+                    if(array[i] > 1) // 1 isn't prime num, it starts from 2
                     {
-                        primes[j] = array[j]; // give primes from the initial array to the empty new one
+                        primes[i] = array[i]; // give primes from the initial array to the empty new one
                         cnt++; // count that primes
                     }
                 }
