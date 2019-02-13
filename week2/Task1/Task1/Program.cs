@@ -7,6 +7,7 @@ using System.IO;
 
 namespace Task1
 {
+
     class Program
     {
         public static void palindrome(string s)
