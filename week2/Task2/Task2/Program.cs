@@ -39,7 +39,7 @@ namespace Task2
         {
             List<string> primes = new List<string>();
 
-            FileStream fs = new FileStream(@"C:\Users\Аружан\Desktop\pp2\week2\Task2\input.txt", FileMode.Open, FileAccess.Read);
+            FileStream fs = new FileStream(@"C:\Users\Аружан\Desktop\pp2\week2\Task2\input.txt.txt", FileMode.Open, FileAccess.Read);
             StreamReader input = new StreamReader(fs);
 
             string line = input.ReadLine();
@@ -57,7 +57,7 @@ namespace Task2
             fs.Close();
 
 
-            FileStream fs2 = new FileStream(@"C: \Users\Аружан\Desktop\pp2\week2\Task2\output.txt", FileMode.Create, FileAccess.Write);
+            FileStream fs2 = new FileStream(@"C: \Users\Аружан\Desktop\pp2\week2\Task2\output.txt.txt", FileMode.Create, FileAccess.Write);
             StreamWriter output = new StreamWriter(fs2);
 
             foreach(var x in primes)
