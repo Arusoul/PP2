@@ -9,29 +9,24 @@ namespace Task4
 {
     class Program
     {
-        public static void CreateFile() // creating a file using the function
-        {
-            FileInfo file = new FileInfo(@"C:\Users\Аружан\Desktop\pp2\week2\Task4\file.txt");
-            FileStream fs = file.Create();
-        }
-
-        public static void CopyFile() // fucnt which copies files
-        {
-            string path1 = @"C:\Users\Аружан\Desktop\pp2\week2\Task4\file.txt";
-            string path2 = @"C:\Users\Аружан\Desktop\pp2\week2\Task4\file.txt";
-            FileInfo f1 = new FileInfo(path1);
-            FileInfo f2 = new FileInfo(path2);
-            f1.CopyTo(path2);
-        }
-
-        public static void DeleteFile()
-        {
-            FileInfo f = new FileInfo(@"C:\Users\Аружан\Desktop\pp2\week2\Task4\file.txt");
-            f.Delete(); // xzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-        }
         static void Main(string[] args)
         {
-            CreateFile();
+
+            Directory.CreateDirectory(@"C:\Users\Аружан\Desktop\pp2\week2\Task4\path"); // create a folder
+            Directory.CreateDirectory(@"C:\Users\Аружан\Desktop\pp2\week2\Task4\path1");
+
+            string FilePath = @"C:\Users\Аружан\Desktop\pp2\week2\Task4\path\file.txt"; // shows a path
+            string FilePath1 = @"C:\Users\Аружан\Desktop\pp2\week2\Task4\path1\file.txt";
+
+            StreamWriter sw = new StreamWriter(FilePath); // creates a file
+            sw.WriteLine(" ");
+            sw.Close();
+
+            File.Copy(FilePath, FilePath1); // copies from the first path to the second
+
+            File.Delete(FilePath); // deletes the first path
+       
         }
+
     }
 }

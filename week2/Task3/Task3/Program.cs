@@ -13,33 +13,34 @@ namespace Task3
         {
             for(int i = 0; i < lvl; i++)
             {
-                Console.Write(" ");
+                Console.Write("   ");
             }
         }
 
         static void task(DirectoryInfo direct, int lvl)
         {
             FileInfo[] files = direct.GetFiles(); // an array with info about files
-            DirectoryInfo[] directories = direct.GetDirectories(); // // an array with xzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
+            DirectoryInfo[] directories = direct.GetDirectories(); // // an array with folders
 
             foreach(FileInfo file in files)
             {
-                PrintSpace(lvl); // call the fuct with spaces for levels
-                Console.WriteLine(file.Name); // write names of the files to see them
+                PrintSpace(lvl); // call the funct with spaces for each level
+                Console.WriteLine(file.Name); // print names of the files
             }
 
             foreach(DirectoryInfo d in directories)
             {
                 PrintSpace(lvl);
-                Console.WriteLine(d.Name); // xzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz files of the files????????
-                task(d, lvl + 1); // xzzzzzzzzzzzzzzzzz
+                Console.WriteLine(d.Name); // names of the folders
+                task(d, lvl + 1); // call the funct again
             }
         }
 
         static void Main(string[] args)
         {
-            DirectoryInfo d = new DirectoryInfo(@"C:\Users\Аружан\Desktop\pp2\week2");
-            task(d, 1);
+            DirectoryInfo d = new DirectoryInfo(@"C:\Users\Аружан\Desktop\pp2\week2"); // get info from the folder
+            task(d, 1); // start the funct
+
             Console.ReadKey();
         }
     }
