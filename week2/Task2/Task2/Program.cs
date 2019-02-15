@@ -9,8 +9,7 @@ namespace Task2
 {
     class Program {
 
-       public 
-            static bool IsPrime(int a)
+       public static bool IsPrime(int a) // checking by funct if the numbers are prime
         {
 
             bool result = true;
@@ -28,7 +27,7 @@ namespace Task2
         }
 
 
-        static bool PrimeString(string s)
+        static bool ConvertString(string s) // convert the string elements to numbers 
         {
             return IsPrime(int.Parse(s));
         }
@@ -37,17 +36,17 @@ namespace Task2
 
         static void Main(string[] args)
         {
-            List<string> primes = new List<string>();
+            List<string> primes = new List<string>(); // list of prime numbers, still empty
 
-            FileStream fs = new FileStream(@"C:\Users\Аружан\Desktop\pp2\week2\Task2\input.txt.txt", FileMode.Open, FileAccess.Read);
+            FileStream fs = new FileStream(@"C:\Users\Аружан\Desktop\pp2\week2\Task2\input.txt.txt", FileMode.Open, FileAccess.Read); // access to read the file
             StreamReader input = new StreamReader(fs);
 
-            string line = input.ReadLine();
+            string line = input.ReadLine(); 
             string[] arr = line.Split(' ');
             
             foreach (var x in arr)
             {
-                if (PrimeString(x))
+                if (ConvertString(x))
                 {
                     primes.Add(x);
                 }
@@ -62,8 +61,8 @@ namespace Task2
 
             foreach(var x in primes)
             {
-                output.Write(x + " ");
-                Console.Write(x + " ");
+                output.Write(x + " "); // print primes to the file
+               // Console.Write(x + " ");  
             }
 
             
