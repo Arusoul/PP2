@@ -19,7 +19,7 @@ namespace Task3
                 arr[i] = int.Parse(input[i]); // convert chars of the string array to int array
                 Console.Write(arr[i] + " " + arr[i] + " "); // print every element twice with space between them
             }
-             
+            Console.ReadKey();
         }
     }
 }

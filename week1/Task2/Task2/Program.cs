@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Task2
 {
-    class Student
+    class Student // creating class with student info and declare it
     {
         public string name;
         public string ID;
@@ -17,10 +17,11 @@ namespace Task2
             this.name = name;
             this.ID = ID;
         }
+
         public void print()
         {
             year++;
-            Console.WriteLine(name + " " + ID + " " + year);
+            Console.WriteLine(name + " " + ID + " " + year); // print name, id and year
         }
     }
 
@@ -28,8 +29,11 @@ namespace Task2
     {
         static void Main(string[] args)
         {
-            Student info = new Student("Aruzhan", "18BD110118");
-            info.print();
+            Student info = new Student("Aruzhan", "18BD110118"); // give znacheniya to funct Student 
+            info.print(); // use class Student and call funct that prints the znacheniya
+
+            Console.ReadKey();
         }
+
     }
 }
