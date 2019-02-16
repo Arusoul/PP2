@@ -1,0 +1,6 @@
+C:\Users\Аружан\Desktop\pp2\week3\Task1\Task1\bin\Debug\Task1.exe.config
+C:\Users\Аружан\Desktop\pp2\week3\Task1\Task1\bin\Debug\Task1.exe
+C:\Users\Аружан\Desktop\pp2\week3\Task1\Task1\bin\Debug\Task1.pdb
+C:\Users\Аружан\Desktop\pp2\week3\Task1\Task1\obj\Debug\Task1.csprojResolveAssemblyReference.cache
+C:\Users\Аружан\Desktop\pp2\week3\Task1\Task1\obj\Debug\Task1.exe
+C:\Users\Аружан\Desktop\pp2\week3\Task1\Task1\obj\Debug\Task1.pdb
